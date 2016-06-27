@@ -1,0 +1,14 @@
+<form role="form">
+	<div class="message" ng-if="message">
+		{{message}}
+	</div>
+	<div class="radio">
+		<label ng-repeat="gift in gifts"> 
+			<input type="radio" ng-model="$parent.gift_id" name="gift_id" value="{{gift.id}}">		
+			<p> Name : {{gift.name}} </p>
+			<p> Description : {{gift.description}} </p>  
+			</input>
+		</label>
+	</div>
+	<button  ng-click="sendGift(gift_id)" type="button" class="btn btn-primary">Send gift</button>
+</form>
