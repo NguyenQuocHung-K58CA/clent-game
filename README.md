@@ -5,4 +5,4 @@
 * cd projectname
 * npm install
 * npm start
-* Type http://localhost:4000 on brower
+* Type http://localhost:4000 on browser
